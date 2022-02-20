@@ -268,16 +268,78 @@
 #
 # input("\n\nНажмите Enter, чтобы выйти")
 
-top = ""
-list = []
+# top = ""
+# list = []
+#
+# while True:
+#     top = input("Что вы хотите добавить в пиццу?")
+#     if top == "quit":
+#         print("Ваш заказ принят")
+#         break
+#     if top != "quit":
+#         print(f"{top} добавили в пиццу")
+#     list.append(top)
+#
+# print(list)
 
-while True:
-    top = input("Что вы хотите добавить в пиццу?")
-    if top == "quit":
-        print("Ваш заказ принят")
-        break
-    if top != "quit":
-        print(f"{top} добавили в пиццу")
-    list.append(top)
+"""************   Цикл for и функция range   ************"""
 
-print(list)
+# numbers = 1, 2, 3, 4
+#
+# for i in numbers:
+#     print(i)
+
+# a = int(input("Введите первое число: "))
+# b = int(input("Введите второе число: "))
+#
+# for i in range(a, b):
+#     if i % 2 !=0:
+#         print(i)
+
+
+# c = int(input("Введите первое число: "))
+# d = int(input("Введите второе число: "))
+#
+# if c > d:
+#     for i in range(c, d, -1):
+#         if i % 5 == 0:
+#             if i % 2 != 0:
+#                 print(i)
+# elif c < d:
+#     for i in range(d, c, -1):
+#         if i % 5 == 0:
+#             if i % 2 != 0:
+#                 print(i)
+
+
+# e = str(input("Введите слово: "))
+#
+# for i in e:
+#     print(i)
+
+# for i in range(0, 6):
+#     if i !=3 and i != 6:
+#         print(i)
+
+# a = 1
+# b = 0
+# c = 0
+#
+# while a != 0:
+#     a = int(input("Введите число: "))
+#     if a > 0:
+#         b += a
+#     elif a < 0:
+#         c += a
+#
+# print("Сумма положительных чисел:", b)
+# print("Сумма отрицательных чисел:", c)
+
+# n = int(input("Введите натуральное число: "))
+#
+# if n > 0:
+#     for i in range(1, 11):
+#         print(f"{n} * {i} = ", n * i)
+
+
+
