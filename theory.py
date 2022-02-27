@@ -341,5 +341,103 @@
 #     for i in range(1, 11):
 #         print(f"{n} * {i} = ", n * i)
 
+"""************   Списки, множества, кортежи и словари   ************"""
 
+# Список - это изменяемая упорядоченная последовательность элементов
 
+# list_ = ['Egor', 'Berdnik', 16, True]
+
+# print(list_)
+#
+# for i in list_:
+#     print(i)
+#
+# list_1 = list(range(1, 5))
+# print(list_1)
+#
+# a = 1, 2, 3, 4
+# list_2 = list(a)
+# print(list_2)
+
+# names = ['Egor', 'Nikita', 'Artem', 'John']
+# surnames = ['Berdnik', 'Ivanov', 'Troshkin', 'Petrov']
+
+# # print(names[0])
+#
+# count = 0
+# for name in names:
+#     print(f'Hello, {name}!')
+#     count += 1
+#     if count == 2:
+#         break
+
+# print(names[-1])
+#
+# print(names[1:4:1])
+
+# print(names + surnames)
+
+# names[2] = 'Vlad'
+# print(names[2])
+
+# a = ['Irina', 'Gleb']
+# names.append(a)
+# print(names)
+
+# names += ['Anastasiya', 'Boris']
+# print(names)
+
+# names.insert(1, 'Ivan')
+# print(names)
+
+# names.remove('John')
+# print(names)
+
+# del names[0]
+# print(names)
+
+# names.pop(0)
+# print(names)
+
+# if 'Nikita' in names:
+#     print('Никита на месте!')
+
+# index = names.index('Egor')
+# print(index)
+
+# list_2 = [i for i in range(1,10)]
+# print(list_2)
+
+# list_3 = [1, 5, 4, 2, 8, 7]
+
+# list_3.sort()
+
+# print(list_3)
+#
+# names.sort(reverse=True)
+# print(names)
+
+# print(max(list_3))
+
+# print(list_3)
+# list_3.reverse()
+# print(list_3)
+
+# list_4 = list(list_3)
+# print(list_4)
+
+# list_4 = [int(i) for i in input().split()]
+# print(list_4)
+
+list_5 = []
+
+while True:
+    number = int(input('Введите 0 для завершения ввода \nВведите число: '))
+    list_5.append(number)
+    if number == 0:
+        break
+if 777 in list_5:
+    print('True')
+else:
+    print('False')
+    
