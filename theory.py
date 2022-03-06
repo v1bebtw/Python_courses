@@ -429,15 +429,106 @@
 # list_4 = [int(i) for i in input().split()]
 # print(list_4)
 
-list_5 = []
+# list_5 = []
+#
+# while True:
+#     number = int(input('Введите 0 для завершения ввода \nВведите число: '))
+#     list_5.append(number)
+#     if number == 0:
+#         break
+# if 777 in list_5:
+#     print('True')
+# else:
+#     print('False')
 
-while True:
-    number = int(input('Введите 0 для завершения ввода \nВведите число: '))
-    list_5.append(number)
-    if number == 0:
-        break
-if 777 in list_5:
-    print('True')
-else:
-    print('False')
-    
+# list_ = [x for x in range(-5, 5)]
+# print(list_)
+
+# list_generator = [x**2
+#                   for x in list_
+#                   if x % 2 == 0]
+# print(list_generator)
+
+# list_4 = []
+# for x in list_:
+#     if x % 2 == 0:
+#         list_4.append(x**2)
+# print(list_4)
+
+# tuple_ = (1, 2, 3, 4, 5, 2, 2, 4)
+# print(tuple_)
+# print(len(tuple_))
+#
+# a = set(tuple_)
+# print(a)
+
+# users = {'name_1': 'Egor',
+#          'surname_1': 'Berdnik'}
+#
+# users['name_2'] = 'Artem'
+# users['name_1'] = 'Ivan'
+#
+# # print(users['name_1'])
+# # print(users['surname_1'])
+#
+# del users['name_1']
+# print(users)
+# print(users['name_2'])
+
+# favourite_food = {
+#     'Иван': 'колбаса',
+#     'Георгий': 'кукуруза',
+#     'Василий': 'бураки',
+#     'Андрей': 'колбаса',
+# }
+
+# food = favourite_food.get('Артём', 'картофель')
+# print(f'Любимая еда Артёма - {food}')
+
+# for key, value in favourite_food.items():
+#     print(f'key: {key}, value: {value}')
+#
+# for key in favourite_food.keys():
+#     print(f'Key: {key}')
+#
+# for value in favourite_food.values():
+#     print(f'Value: {value}')
+
+# N = int(input('Введите двухзначное число: '))
+#
+# list_5 = [int(a) for a in str(N)]
+# print(sum(list_5))
+
+
+# count = 0
+#
+# for number in str(N):
+#     number = int(number)
+#     count += number
+# print(count)
+
+# year = int(input('Введите год: '))
+# if year % 100 == 0:
+#     print('Yes')
+# else:
+#     print('No')
+
+import random
+
+n = int(input('Введите размер списка: '))
+
+list_6 = [random.randint(0, 100) for i in range(n)]
+print(list_6)
+
+# a = int(input('Введите индекс элемента: '))
+# list_6.pop(a)
+# print(list_6)
+
+for index in range(len(list_6)):
+    if index % 6 == 0:
+        list_6.pop(index)
+
+print(list_6)
+
+
+
