@@ -513,22 +513,118 @@
 # else:
 #     print('No')
 
-import random
-
-n = int(input('Введите размер списка: '))
-
-list_6 = [random.randint(0, 100) for i in range(n)]
-print(list_6)
-
-# a = int(input('Введите индекс элемента: '))
-# list_6.pop(a)
+# import random
+#
+# n = int(input('Введите размер списка: '))
+#
+# list_6 = [random.randint(0, 100) for i in range(n)]
+# print(list_6)
+#
+# # a = int(input('Введите индекс элемента: '))
+# # list_6.pop(a)
+# # print(list_6)
+#
+# for index in range(len(list_6)):
+#     if index % 6 == 0:
+#         list_6.pop(index)
+#
 # print(list_6)
 
-for index in range(len(list_6)):
-    if index % 6 == 0:
-        list_6.pop(index)
+"""************   Работа с файлами   ************"""
 
-print(list_6)
+# test.txt
+# file_reader.py
+# names.txt
+
+"""************   Функции   ************"""
+
+# Создание функции
+# def Имя функции(параметры):
+#   Блок инструкции
 
 
+# def user(username, password):
+#     print(f'Привет {username}!\nПароль: {password}')
+#
+#
+# name = str(input('Введите имя: '))
+# pw = input('Введите пароль: ')
+# user(name, pw)
 
+# def get_name(first_name, last_name, middle_name=None):
+#     """Возвращает аккуратно отформатированные имя и фамилию"""
+#     if middle_name:
+#         full_name = f'{last_name} {first_name} {middle_name} '
+#     else:
+#         full_name = f'{last_name} {first_name}`'
+#     return full_name.title()
+#
+#
+# user = get_name(first_name='Егор', last_name='Бердник', middle_name='Сергеевич')
+# print(user)
+
+# def build_user(first_name, last_name, age=None):
+#     user = {'name': first_name, 'surname': last_name}
+#     if age:
+#         user['age'] = age
+#     return user
+#
+#
+# user_ = build_user('Egor', 'Berdnik', 16)
+# print(user_)
+
+
+# current_users = []
+#
+#
+# def users(names):
+#     global current_users
+#     for name in names:
+#         if name == 'джо':
+#             continue
+#         current_users.append(name)
+#         print(f'Hello, {name.title()}')
+#
+#
+# users(['егор', 'артем', 'назар', 'джо'])
+# print(current_users)
+
+# def fact(number):
+#     if number == 0:
+#         print('Так не пойдёт!')
+#     elif number == 1:
+#         return number
+#     else:
+#         return number * fact(number-1)
+#
+#
+# print(fact(5))
+
+# def print_scores(name, *scores):
+#     print(f'Name: {name}')
+#     for score in scores:
+#         print(score)
+#
+#
+# print_scores('Egor', 2, 10, 8, 9, 10, 2, 5)
+
+# def print_pet_names(owner, **names):
+#     print(f'Owner name: {owner}')
+#     for pet, name in names.items():
+#         print(f'{pet}: {name}')
+#
+#
+# print_pet_names('Egor', dog='Bobik', fish=['Larry', 'Ben', 'Clary'], turtle='Shelldon')
+
+# def draw_triangle(start, stop):
+#     for i in range(start, stop + 1):
+#         print('*' * i)
+#
+#
+# draw_triangle(5, 10)
+
+def make_pizza(size, *toppings):
+    print(f"Пицца, диаметром {size} и с ингридиентами: {', '.join(toppings)}, готовится")
+
+
+make_pizza(35, 'сыр', 'томаты', 'мясо')
