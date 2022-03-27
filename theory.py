@@ -623,8 +623,79 @@
 #
 # draw_triangle(5, 10)
 
-def make_pizza(size, *toppings):
-    print(f"Пицца, диаметром {size} и с ингридиентами: {', '.join(toppings)}, готовится")
+# def make_pizza(size, *toppings):
+#     print(f"Пицца, диаметром {size} и с ингридиентами: {', '.join(toppings)}, готовится")
+#
+#
+# make_pizza(35, 'сыр', 'томаты', 'мясо')
+
+"""************   Классы   ************"""
+
+# class Dog:
+#
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def sit(self):
+#         """Собака садится по команде"""
+#         print(f'{self.name} сел')
+#
+#     def run(self):
+#         print(f'{self.name} побежал')
+#
+#     def get_info(self, age):
+#         print(f'Имя собаки: {self.name}. \nЕго/её возраст: {age}')
+#
+#
+# my_pet = Dog('Bobik')
+# my_pet.sit()
+# my_pet.run()
+# my_pet.get_info(5)
+#
+# my_pet_2 = Dog('Sharik')
+# my_pet_2.run()
+# my_pet_2.get_info(2)
 
 
-make_pizza(35, 'сыр', 'томаты', 'мясо')
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+#         self.restaurant_name = restaurant_name
+#         self.cuisine_type = cuisine_type
+#
+#     def describe_restaurant(self):
+#         print(f'Название ресторана: {self.restaurant_name}, Блюдо: {self.cuisine_type}')
+#
+#     def open_restaurant(self):
+#         print(f'Ресторан {self.restaurant_name} открыт')
+#
+#
+# restaurant = Restaurant('La Salute', 'Салаты и морепродукты')
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
+
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        print('Площадь прямоугольника:', self.width * self.height)
+
+    def drawRect(self):
+        print('*' * self.width)
+        self.width -= 1
+        for i in range(1, self.height-1):
+            print('*', '' * self.width, '*')
+        self.width += 1
+        print('*' * self.width)
+
+
+a = int(input('Введите ширину прямоугольника: '))
+b = int(input('Введите высоту прямоугольника: '))
+
+rectangle = Rectangle(a, b)
+rectangle.drawRect()
+
+
+
